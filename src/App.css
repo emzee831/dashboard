@@ -1,0 +1,47 @@
+body {
+  background-color: azure;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 40px 25px;
+  position: absolute;
+  grid-template-areas: 
+  "sidebar header1 header2 header3"
+  "sidebar main main main"
+  "sidebar main main main";
+}
+
+.buttons {
+  grid-area: sidebar;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  height: 650px;
+  width: 300px;
+}
+
+#reviews {
+  grid-area: header1;
+  background-color: whitesmoke;
+}
+
+#ratings {
+  grid-area: header2;
+  background-color: whitesmoke;
+}
+
+#analysis {
+  grid-area: header3;
+  background-color: whitesmoke;
+}
+
+#innervisitors{
+  grid-area: main;
+  background-color: whitesmoke;
+  height: 300px;
+  width: 380px;
+}
+
