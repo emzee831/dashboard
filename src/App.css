@@ -1,9 +1,15 @@
+
 body {
   background-color: azure;
+  width: 1700px;
+  height: 900px;
 }
+
+
 
 .App {
   display: grid;
+  background-color: rgb(171, 177, 177);
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 40px 25px;
@@ -12,36 +18,81 @@ body {
   "sidebar header1 header2 header3"
   "sidebar main main main"
   "sidebar main main main";
+  padding: 90px;
+  border: 900px black thick;
+  border-style: ridge;
+  height: 70vh;
+  align-content: center;
+  left: 210px;
+  top: 50px;
 }
+
+.App :hover {
+  background-color: grey;
+}
+
 
 .buttons {
   grid-area: sidebar;
-  background-color: whitesmoke;
   display: flex;
   align-items: center;
   height: 650px;
   width: 300px;
+  transition: all 0.1s ease 0.1s;
 }
+
+
 
 #reviews {
   grid-area: header1;
-  background-color: whitesmoke;
+  border: 900px black thick;
+  border-style: groove;
+  height: 200px;
+}
+
+.reviews {
+  transition: all 0.1s ease 0.1s;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 #ratings {
   grid-area: header2;
-  background-color: whitesmoke;
+  border: 900px black thick;
+  border-style: groove;
+  height: 200px;
+}
+
+.average {
+  transition: all 0.1s ease 0.1s;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
 
 #analysis {
   grid-area: header3;
-  background-color: whitesmoke;
+  border: 900px black thick;
+  border-style: groove;
+  height: 200px;
+}
+
+.sentiment {
+  transition: all 0.1s ease 0.1s;
+  grid-column-start: 4;
+  grid-column-end: 6;
 }
 
 #innervisitors{
   grid-area: main;
-  background-color: whitesmoke;
+
   height: 300px;
-  width: 380px;
+  border: 9px black thick;
+  border-style: groove;
+}
+
+.visitors {
+  transition: all 0.1s ease 0.1s;
+  grid-column-start: 2;
+  grid-column-end: 5;
 }
 

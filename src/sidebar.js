@@ -4,7 +4,7 @@ import { sideBarData } from './leftbuttons'
 function sidebar() {
     return (
         <div>
-            <ul className="sidebarlist">
+            <ul>
             {sideBarData.map((val, key) => {
                 return (
                     <li

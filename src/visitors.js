@@ -1,12 +1,11 @@
 import React from 'react'
 
-function visitors() {
+function visitors(props) {
     return (
-        <div className="visitors">
-            <div id="innervisitors">Website Visitor 821 
-
+            <div id="innervisitors">
+            <h2>Website Visitors</h2>
+            <h3>{props.visitors}</h3>
             </div>
-        </div>
     )
 }
 
